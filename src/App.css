@@ -5,9 +5,7 @@
   text-align: center;
 }
 .QuizEnd {
-  display: flex;
   justify-content: center;
-  flex-direction: row;
   text-align: center;
   font-size: 2em;
   padding-top: 20px;
@@ -15,21 +13,36 @@
 .QuizEnd a {
   display: block;
   padding-top: 20px;
+  font-size: 1.5rem;
 }
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
+ul li {
+  float: left;
+  margin: 10px;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 button {
+  padding: 30px;
   margin: 0.6em auto;
   font-size: 1.5em;
   display: block;
 }
-.error {
+.error, .correct {
   color: red;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.correct {
+  color: green;
 }
